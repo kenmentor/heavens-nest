@@ -1,0 +1,294 @@
+ALILONU CHINWENMERI MOSES.
+22/095244003
+TOPIC: DESIGN AND IMPLIMENTATION OF RENTAL AND SALES MANAGEMENT SYSTEM.
+CHAPTER ONE
+INTRODUCTION
+1.1	Background to the Study
+Finding a house to rent or buy in Nigeria has long been a difficult and stressful task for individuals. The existing approach to property search requires individuals to physically move from one neighbourhood to another, inquire from friends and family, or depend entirely on property agents who act as “middlemen” between landlords and those looking for house (Tenant). This process is not only time-consuming but often expensive, as agents typically demand commission fees which can be quite high, in some cases, the commission may be up to ten percent of the yearly rent. This makes the whole process more expensive for tenants who are already trying to manage their housing expenses (Ogundeji,2025).
+In many Nigerian cities today, property advertisements are still done in an informal way. For example Landlords usually place signboards on gates and walls with words “TO LET” or “FOR SALE”. Others depend on word of mouth or social media to spread the information. Because of this, people in search of houses do not always have clear or complete information about the available properties. They often have to physically visit many places before finding a property suitable for their needs. With the rapid increase in internet usage and smart-phone access in Nigeria, there is now an opportunity to solve this problem through technology.
+Many industries such as banking, e-commerce, and transportation already use online systems to make services easier and faster. The real estate landscape can also benefit from such digital solutions.
+A Web-based rental and sales management system can help connect landlords directly with people looking for houses. Through this platform, property owners can list their houses online, while users can search and view available properties from anywhere. This can make the process of finding houses more easy, organized and  convenient.
+This project therefore focuses on  the design and implementation of a web-based Rental and Sales Management System. The system will allow property owners to upload and manage their property listing, while tenants and buyers can search for houses based on their preferred location and budget without necessarily depending on property agents.
+1.2 	Problem Definition
+Currently, the process of renting or buying property in Nigeria is  mostly manual and not well organized. Many people depend heavily on property agents to find houses, which creates several problems for both tenants and property owners. This problem includes:
+1. Dependence on Property Agents and High Commission Fees: Most Nigerians looking for accommodation must go through an agent. These agents charge commission fees which sometimes reaches ten percent of the annual rent. This adds extra financial pressure on tenants and buyers. Currently, there is no accessible alternative that allows individuals to find properties independently and at no extra cost.
+2. Lack of Organized Property Information: in many Nigerian cities, information about houses available for rents or sales is not properly organized. Many people still depend on physical signboards, word of mouth, or agents to know whether a property is available. This whole process makes “House Hunting” slow and stressful (Titilola, 2025).
+3. Inability to Search by Budget and Location: Without a proper system, people searching for houses cannot easily filter based on their budget and preferred  location. This results in wasted time and effort, as individuals visit multiple properties that do not match their requirements before finding a suitable one.
+4. Limited Information Available to Property Seekers: Prospective tenants and buyers often have very little information about a property until they physically visit it. Key details such as rent price, number of rooms, available amenities, and the condition of the property are rarely communicated upfront. This leads to inefficiencies and repeated inspection for the house to be rented or sold.
+5. Limited Use of Digital Property Platform: Although technology has improved many industries, the real estate landscape in Nigeria still lacks effective digital platform for renting and searching properties.
+These problems collectively shows  the need for a better and more efficient system that can simplify property rental and sales management using modern technology-driven solution.
+
+
+1.3	Aim and Objectives of the Study
+The aim of this study is to design and implement a web-based Rental and Sales Management System that enables property owners to advertise their properties online for rent or sale and allow users to search for and identify available and suitable properties based on their budget and preferred location, thereby reducing dependence on property agents and making property access more convenient for all users.
+1.4 	Specific objectives
+To achieve this aim, the following objectives are considered:
+i. To examine the challenges faced by property seekers and property owners under the current manual and agent-driven property search process in Nigeria.
+ii. To design a user-friendly web-based platform that allows property owners (landlords) to register and upload detailed properties available for rent or sale, including information on location, price, property type, and photographs.
+iii. To implement a search feature that allows users to filter properties based on their budget and preferred location.
+iv. To create secure user registration and login system for different categories of users, such as property owners (Landlords) and property seekers (Tenants).
+v. To build a property owner dashboard that provides a centralized interface for managing listings, viewing inquiries, and updating property information when necessary.
+vi. To build a user dashboard, where property seekers can explore various properties, rental houses at their convenience, book online with just a few clicks and  directly communicate with the property owners (Voumick, D, et al., 2021).
+vii. To test and evaluate the developed system to confirm that it meets user requirements and functions reliably under expected conditions of use.
+1.5 	Research Justification
+The justification for this research stems from the serious difficulties many Nigerians face when trying to find accommodation or manage property. The existing approach to property rental and sales in Nigeria is outdated, slow, and often expensive due to the heavy dependence on property agents. By developing a web-based solution that addresses these challenges, this project is both timely and relevant.
+For Users (Tenants and Buyers), the development of a rental and sales management system will reduce the stress, cost and inefficiency associated with the current house hunting method in Nigeria. Studies have shown that digital housing platforms improve access to property information and decision making. This system allows users to search, compare, and select properties based on their budget and preferred location, thereby saving time. It also helps to minimize exposure to fraudulent practices, which are common in manual housing searches (Yoade, A. 2021).
+From the property owners standpoint, it provides a more effective and organized way to manage and advertise properties. Currently, landlords rely heavily on property agents or physical notices, which limit visibility and can delay occupancy. The rental and sales management system will provide a database to store information with data security for landlords, making it beneficial to both landlords and users (Kirmani, J.A, et al., 2017).
+At the societal level, this research is justified because it promotes a more structured and transparent housing approach. The current housing system is often disorganized, leading to challenges such as exploitation, and lack of information.
+In conclusion, this research provides a practical solution to the challenges associated with the current housing system in Nigeria. Many people still go through stress, delay, and even risk of fraud when searching for houses using manual method. By designing and implementing a Rental and Sales management system, users can easily find and compare available properties in a faster and more reliable way. While property owners are given a better platform to advertise and manage their properties efficiently, without both parties depending on property agents.
+1.6.	Scope and Limitations of the Study
+1.6.1	Scope
+This study is focused on the design and implementation of a web-based platform that supports property rental and sales management in Nigeria. The system is built to serve two primary user groups: property owners who wish to advertise their available properties, and property seekers who are looking for properties to rent or buy.
+The scope of the system covers the following functional areas: user registration and secure login for both property owners and property seekers, property advertisement creation with details including property type, location, price, description, and images, a search and filter system that allows users to find properties by location and budget, a communication option that allows property seekers to reach property owners directly.
+1.6.2 Limitation:
+Online payment not included in this  initial version of the system.
+The system does not connect to government land or property registration databases, for verification of property ownership. Property advertisement accuracy therefore depends on the truthfulness of the information provided by property owners.
+The system may not be easily accessible in rural areas where internet access is limited.
+1.7 	Definition of Terms
+The following terms are used within the context of this study and are defined as follows:
+1. Rental Management System: A software system used to manage and advertise properties available for rent.
+2. Sales Management System: A digital platform that allow property owners to list their houses for sale for potential buyers.
+3. Property Owner/Landlord: An individual that owns one or more properties and makes them available for rent or sale through the platform.
+4. Property Seeker: Any individual actively searching for a property to rent or purchase. This category includes both prospective tenants and buyers.
+5. Property Advertisement: Information uploaded by a property owner describing a property available for rent or sale. These information include.
+i. Type of property (an apartment, duplex, bungalow, land).
+ii. Purpose (for rent or for sale).
+iii. Price and Payment terms.
+iv. Property features:
+Number of bedrooms and bathrooms.
+Size (square meters, plot size).
+Facilities (kitchen, parking space, balcony).
+Utilities (water supply, electricity, internet access).
+Condition of the property (furnished or unfurnished).
+Visual content (photo of interior and exterior).
+6. Property Agent: A middleman who connects property owners with tenants or buyer, usually in exchange for a commission fee.
+7. Web-based Application: A software application hosted on a web server and accessed by users through an internet browser, without requiring installation on the user's local device.
+8. Dashboard: A user interface areas where registered users can manage their activities, view listings, and access platform features.
+9. Booking: An expression of interest made by a property seeker to rent or buy a property through the platform.
+
+
+CHAPTER TWO
+LITERATURE REVIEW
+2.1 	Introduction
+This chapter reviews literature relevant to the design and implementation of a web-based Rental and Sales Management System, with particular focus on the Nigerian real estate environment. The chapter begins by explaining the key concepts that guide the study. It then discusses the theoretical frameworks used in designing the system, followed by a review of existing and related works. Finally, it highlights the gaps in existing system and explains how this project intends to address them.
+2.2 	Conceptual Review
+This section examines the core concepts that are important to this study. Understanding of these concepts helps to clearly define the problem and the proposed solution.
+2.2.1 Concept of Rental Management Systems
+A rental management system is a software application designed to facilitate the processes associated with the renting and managing of properties, including property advertisement, payment tracking, and communication between landlords and tenants. 
+The need for such a system has increased due to rapid urbanization. According to United Nations (2018), today, 55% of the world’s population lives in urban areas, a proportion that is expected to increase to 68% by 2050. In Nigeria specifically, the urban population has grown from approximately 38.8% in 2000 to over 51.96% in 2020, reflecting rapid urbanization and increasing pressure on urban housing (World Bank, 2021). This urbanization has increased both the volume and complexity of rental transactions, making manual management approaches increasingly inadequate.
+From a user perspective, one major advantage of rental management system is the ability to search for house online and to stop dependency on property agent. According to Iremeka (2022) & Ogundeji (2025) the dominance of unregulated property agent in Nigeria has historically imposed significant financial and logistical burdens on tenants, who are routinely charged arbitrary agency fees, inspection fees, and legal fees that far exceed regulated limits. 
+A well-designed rental management system that allows direct landlord to tenant interaction can reduce agent dependency, lower transaction costs, and make housing more accessible to low and middle-income earners.
+2.2.2 	Concept of Sales Management Systems
+A sales management system refers to a platform or application that helps managing the process of selling proprieties. It allow property owners to advertise their properties and enable buyers to search and make inquiries.
+ Unlike rental management, which involves ongoing transactional relationships between landlords and tenants, property sales management is focused on facilitating single, high-value transactions between sellers and buyers, though the lead-up to such transactions can involve extended periods of inquiry, negotiation, and documentation.
+One major issue in property sales is information asymmetry. According George Akerlof (1970) information asymmetry occurs when one party in an economic transaction has more or better information than the other, leading to market imbalance. In the Nigeria, buyers often depend on agents for information, which limit transparency. A digital sales management platform addresses this asymmetry by making property information publicly accessible and standardized, allowing buyers to make more informed decisions.
+2.2.3 	Integrated Rental and Sales Systems
+An integrated system combines both rental and sales features into one system. This means users do not need separate systems to search for rental or sales properties. Rather than maintaining separate systems for properties available for rent and those available for purchase, an integrated system allows property owners to manage all their listings from one platform, and property seekers to explore both rental and purchase options within the same interface. This approach can be referred as a strategic management which enhances decision making and organizational performance (Laudon & Laudon 2020)
+The theoretical basis for system integration in information systems is well established. According to O’Brien & Marakas (2011), integration reduces data redundancy, eliminates the inefficiencies of switching between multiple systems, and provides users with a more coherent and complete view of the information they need. In the property management context, integration is particularly valuable for landlords who manage a combination of rental and sale properties, and for property seekers who may not have firmly decided between renting and buying and wish to explore both options simultaneously.
+For the current study, the integrated approach is adopted because in Nigeria, property owners can rent or sale their properties, and where property seekers benefit from having access to the widest possible range of options within a single platform.
+2.3 	Theoretical Framework
+The design and implementation of the proposed system is guided by two theoretical frameworks: Systems Theory and Database Management Theory. Together, these frameworks provide both a conceptual perspective through which to understand the system as a whole and a technical foundation for how data within the system is organized and managed.
+2.3.1 Systems Theory
+The rental and sales management system should not be seen as just a simple website but rather as a system made up of interconnected components that all depend on each other to work properly. The users (property owners and property seekers) who register on the website, the property advertisement they create, the search filters that are applied and communication tool for booking, all these components depend on each other to function effectively. For example, if the search feature is not working properly, users (property seekers) will struggle to find suitable properties. Likewise, if the advertisement process is complicated, users (property owners) will find it difficult to upload their properties. Every component matters, and they all need to work together (O’Brien & Marakas, 2011). 
+Another important concept in systems theory is the idea of input, process, and output. This help in understanding how a system operates, in this project, input include information such as property details provided by landlords and search preference entered by property seekers. The process involve how the system handles this information by storing, organizing, and filtering. The output is what the user finally sees, such as available properties and user dashboards.
+2.3.2 Database Management Theory 
+Database Management Theory provides the technical foundation for how the data within the proposed system is structured, stored, retrieved, and protected. A database management system (DBMS) is software that enables the definition, creation, maintenance, and controlled access of a database (Elmasri & Navathe 2016). The application of database management principles to this project ensures that property listing, user profiles, and bookings are handled in a manner that is efficient, consistent, and secure.   
+The relational database model, introduced by Edgar Codd (1970), remains the dominant framework for organizing data in modern software applications. In the relational database model, data is stored in structured tables consisting of rows and columns, and relationships between different data entities are established through the use of primary and foreign keys. This model is directly applicable to the proposed system, where multiple data entities, including users, properties, listings, and inquiries must be stored in an interrelated and queryable structure.
+Normalization, a key principle of relational database design, refers to the process of organizing data to minimize redundancy and ensure data integrity. In the context of this system, normalization ensures that property details, user account information, and inquiry records are each stored in appropriate, non-overlapping tables, reducing the risk of data inconsistencies and making the database easier to maintain as the volume of records grows.
+Database Management Theory also addresses the critical issue of data security and access control. David Ferraiolo and Rick Kuhn (1992) introduced the role-based access control (RBAC) model, which restricts system access based on the roles assigned to individual users. In the proposed system, RBAC is implemented to ensure that property owners can only manage their own listings(advertisement), property seekers can only view and inquire about listings, and system administrators have oversight access to all records. This layered access structure protects the privacy and integrity of all user data within the system.
+2.4 	Review of Related Works
+This section reviews existing platforms and systems that are related to the objectives of this study. The review critically examines both international and Nigerian platforms, assessing their strengths and identifying the limitations that the current project seeks to address.
+2.4.1 Existing Rental and Sales Management Systems
+Propertypro.ng is one of Nigeria's most widely used property listing platforms, formerly known as ToLet.com.ng. It was officially rebranded after its acquisition of jumia House Nigeria in 2017. The Propertypro.ng allows landlords, property managers, and real estate agents to advertise properties for rent or sale, and provides users with search functionality based on location, property type, and price range. However, the study also found that the overwhelming majority of listings on the platform were managed by registered real estate agents rather than individual landlords, meaning that the platform had not meaningfully disrupted the agent-driven model. A tenant using Propertypro.ng to find accommodation is still typically directed to an agent who will charge a commission before facilitating any transaction.
+Nigeria Property Centre(NPC) is a prominent real estate listing platform for sale, rent and lease of properties in Nigeria. It offers Nigerian property seekers an easy way to find property such as homes, houses, lands, office spaces and other commercial properties to rent or buy but reliance on third party agent accuracy, potential for outdated listings, and lack of direct control over property verification or physical inspection.
+Realtor.com is one of the leading property sales platforms in the United States, provides a more comprehensive model of what a mature sales management system can achieve. It offers detailed property listings with multiple photographs, pricing history, virtual tours, and the ability for buyers to save, compare, and share listings. Agents can manage their listings and client communications through the platform, while individual sellers can also list properties directly. However, Realtor.com is designed for the American market and does not address the specific needs of the Nigerian property sales environment.
+Across these three platforms, a consistent pattern emerges: while significant progress has been made in digitizing property search and listing processes, existing platforms in the Nigerian market continue to operate largely through agents, and none has successfully established a model of direct, agent-free connection between individual landlords and tenants at scale.
+
+2.5 	Summary of the Literature Review and Knowledge Gap
+The literature reviewed in this chapter reveals several important insights about the current state of rental and sales management systems, both globally and within Nigeria.
+First, there is broad consensus in the literature that digital platforms for property management offer significant advantages over traditional manual and agent-driven processes. They improve the accessibility and transparency of property information, reduce transaction costs, and make housing markets more efficient. 
+Second, the review reveals that existing property platforms in the Nigerian market have not fully addressed the problem of agent dependency. Leading Nigerian platforms such as Propertypro.ng and Nigeria Property Centre(NPC) continue to operate primarily as agent-managed listing services. The financial and logistical burden that agent dependency places on ordinary Nigerian property seekers has therefore not been meaningfully reduced by the platforms currently available.
+The key knowledge gap identified through this review is the absence of a dedicated, web-based platform designed specifically to connect property owners directly with tenants and buyers in Nigeria without the compulsory involvement of agents and equipped with robust search and filter tools that allow property seekers to find properties based on their specific budget and location requirements. This gap is precisely what the current project seeks to fill.
+
+
+2.6 Proposed Contribution to Knowledge
+Based on the gaps identified through the literature review, this project makes the following contributions to knowledge:
+First, this study contributes a locally designed, context-specific solution to the property access problem in Nigeria. Unlike existing platforms that have been adapted from international models or that continue to rely on agent-mediated transactions, the proposed system is built specifically for the Nigerian property market, taking into account the prevalence of individual landlords, the diversity of property types across Nigerian cities, and the primacy of price and location as decision criteria for property seekers.
+Second, this project contributes a practical demonstration of how web-based information systems can be applied to address a social and economic challenge faced by millions of Nigerians. It serves as a reference and foundation for future researchers and developers seeking to build similar systems for other sectors of the Nigerian economy where manual processes continue to limit efficiency and access.
+Third, by implementing and testing a system that enables direct landlord-to-tenant and owner-to-buyer interaction, this study provides evidence of the feasibility of agent-free property transactions in the Nigerian digital environment. This contributes to the literature on disintermediation which is the cutting out intermediaries such as dealers, brokers, or agents (George Akerlof, 1970).
+Finally, the system architecture, database design, and documentation produced in this project provide a reusable foundation for future enhancements, including the integration of live payment processing, mobile application development, and connections with government property registration databases all of which represent identified areas for future research.
+
+
+
+CHAPTER THREE
+SYSTEM ANALYSIS AND DESIGN
+3.1.	Introduction
+This chapter explains the analysis and design process used in the development of the proposed Rental and Sales Management System. Having established the background, problem, and supporting literature in the previous chapters, this chapter focuses on the practical design of the system by explaining what the system is expected to do and how it is designed to meet those requirements.
+The chapter begins with a system analysis, during which requirements of the system are gathered and examined based on the needs of the two main users discussed in Chapter One: property owners and property seekers. This is followed by a use case diagram, which illustrates the interactions between these users and the system. The functional and non-functional requirements of the system are then specified, after which the chapter describes the methodology used for the system's design. The logical design of the system is shown using the activity and class diagrams, while the physical design focuses on the database structure, and the control measures used to secure the system and ensure data accuracy.
+3.2.	System Analysis (Requirement Gathering)
+System analysis involves studying an existing problem to understand it and determine of a new system. For this project, the system requirement were gathered by reviewing the challenges discussed in chapter one and two and by studying how similar property platform in Nigeria and other countries operates. 
+The requirement of the system were obtained from three main sources. The first sources was the problem discussed in Chapter One, which identified agent dependency, disorganized property information, and the inability to search by budget and location as the central challenges facing property seekers and owners in Nigeria. The second source was the review of related works in Chapter Two, which show that even where digital platforms exist, such as Propertypro.ng and Nigeria Property Centre, they have not eliminated the agent-driven processes, suggesting that any new system should be designed from the beginning to support direct landlord-to-tenant and owner-to-buyer interaction. The third source was the review of similar property management systems. This focused on the common features expected in a property platform, such as user registration, property search, and the ability for users to manage their own property listing.
+Based on these sources, two main categories of system users were identified, and their requirement were discussed separately.
+Property Owners (Landlords) require a means of registering on the platform, creating an account that distinguishes them from property seekers, uploading detailed information about properties available for rent or sale, and managing these listings over time, including updating details or removing a listing once a property has been let or sold.
+Property Seekers (Tenants and Buyers) require a means of registering and logging into the platform, searching for available properties using filters such as location and budget, viewing detailed information about any property of interest, and a way of expressing interest in or making inquiries about a property without first needing to go through an agent.
+In addition to these two main categories, the system also has a basic administrative section for managing the platform. However, as stated in chapter one administrative functions are limited because payment processing and verification of property owners are not included.
+3.3	Use Case Diagram
+The use case diagram for the Rental and Sales Management System is presented in Figure 3.1. It illustrates the interactions between the two main actors of the system, the Property Owner and the Property Seeker, and the various functions each is able to perform.
+The Property Owner actor interacts with the system through the following use cases: Register Account, Login, Create Property Listing, Update Listing, Delete Listing, and View Inquiries. The Property Seeker actor interacts with the system through the following use cases: Register Account, Login, Search Properties, Filter by Location and Budget, View Property Details, and Contact Property Owner. 
+Both the property owner and the property seekers share two common use cases: Register Account and Login. However, the system differentiated between the two account types so that each user can access the dashboard and functions assigned to their role.
+ This separation reflects the role-based structure discussed under Database Management Theory in Chapter Two, where access to system functions is determined by the role assigned to a given user (Ferraiolo & Kuhn, 1992).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 3.3: Use Case Diagram of the Rental and Sales Management System]
+3.4.	Program Specification (Functional and Non-Functional Requirements)
+Requirements specification involves stating, in clear terms, what the system is expected to do (functional requirements) and the qualities the system must possess in order to do it well (non-functional requirements).
+3.4.1.	Functional Requirements
+The functional requirements of the system are as follows:
+1. The system shall allow a new user to register an account as either a Property Owner or a Property Seeker.
+2. The system shall allow a registered user to log in using a valid email address and password.
+3. The system shall allow a Property Owner to create a new property listing, including the property type, location, price, description, and photographs.
+4. The system shall allow a Property Owner to update or delete an existing property listing.
+5. The system shall allow a Property Seeker to search for available properties.
+6. The system shall allow a Property Seeker to filter search results by location and by budget.
+7. The system shall display detailed information about a selected property, including all information supplied by the Property Owner at the point of listing.
+8. The system shall provide a means for a Property Seeker to contact or make an inquiry to a Property Owner regarding a specific listing.
+9. The system shall provide a dashboard for Property Owners to view and manage all listings created under their account.
+10. The system shall provide a dashboard for Property Seekers to view properties they have shown interest in.
+3.4.2.	Non-Functional Requirements
+The non-functional requirements describe the quality attributes the system must meet:
+i. Usability: The system shall be designed with a simple and intuitive interface that does not require technical expertise to operate, in keeping with the goal of making property access convenient for the average Nigerian user.
+ii. Security: The system shall protect user data through secure authentication, ensuring that only authorized users can access or modify their own account information and listings.
+iii. Performance: The system shall return search results within an acceptable response time under normal conditions of use.
+iv. Reliability: The system shall be available and function correctly whenever accessed, with minimal downtime.
+v. Scalability: The system shall be designed in a manner that allows additional features, such as online payment, and attached owner certificate of ownership to be incorporated in future versions without requiring a redesign of the existing database structure.
+vi. Maintainability: The system's code-base and database structure shall be organized in a way that allows for straightforward debugging, updates, and future enhancement.
+3.5	System Design Methodology
+This project uses an Agile, incremental approach to system design and development. Instead of using the waterfall approach, the Agile approach allows the system to be developed in small, manageable increments, with each increment adding a working piece of functionality that can be reviewed and refined before the next is built.
+This approach was used because it is most suitable for the project.
+First, considering the time available for this project, the incremental approach made it possible to develop and test important features such as user registration, login, and property listing first. Other features, such as property search filters and enquiry system, were added in later stage.
+Second, the Agile approach aligns naturally with the Systems Theory perspective introduced in Chapter Two, in which the system is understood as a set of interdependent components; building and testing components incrementally makes it easier to confirm that each part functions correctly on its own before confirming that it works correctly in combination with the others (O'Brien & Marakas, 2011).
+In this practice, the incremental approach was carried out in four main stages. Each stage involved identifying the requirements, designing the relevant parts of the database and user interface, implementing the required features, and testing them before moving to the next stage.
+The system was developed in the following increments:
+1. User registration, login, and authentication.
+2. Property listing creation and management.
+3. Property search and filtering.
+4. The enquiry and communication features between property owners and property seekers 
+3.5.1  Logical Design
+The logical design of the system explains how the system works. It describes the processes carried out by the system and the relationship between its different components without specific technologies used to implement it. The logical design phase is crucial in the system development because it offers the blueprint for how the system will function from the perspectives of the end-user
+3.5.2  Activity Diagram
+The activity diagram illustrates the sequence of actions involved in the two main process of the system: the property listing process carried out by a Property Owner, and the property search and enquiry process carried out by a Property Seeker.
+For the Property Owner, the process begins when the user logs into the system and proceeds to their dashboard. From there, the owner selects the option to create a new listing, after which the system presents a form requesting the relevant property details, including type, location, price, description, and images. Once submitted, the system validates the information provided; if any required field is missing, the user is prompted to correct it before the listing can be saved. Upon successful validation, the listing is stored in the database and becomes visible to property seekers through the search function.
+For the Property Seeker, the process begins similarly with login, after which the user proceeds to the search interface. The user enters their preferred location and budget, and the system queries the database for listings that satisfy these criteria, returning the matching results. The user may then select a specific listing to view its full details. If the property is of interest, the user may proceed to submit an enquiry, which the system then directs the enquiry to the appropriate property owner's dashboard to be responded to.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 3.5a: Property Owner Activity Diagram 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 3.5b: Property Seeker Activity Diagram 
+3.5.3.	Class Diagram
+The class diagram for the rental and sales management system encapsulates the core entities and their interactions within the system. Five principal classes were identified for this system: User, Property Owner, Property Seeker, Listing, and enquiry.
+The User class serves as a base entity holding attributes common to all users of the system, such as user ID, name, email address, password, and role. The Property Owner and Property Seeker classes are inherited extensions of the User class, reflecting the role-based distinction discussed earlier in this chapter; this structure mirrors the relational principle of minimizing redundancy by avoiding the duplication of shared attributes across user types.
+The Listing class holds the attributes associated with a property advertisement, including a unique listing ID, property type, location, price, description, image references, and a foreign key linking the listing to the Property Owner who created it. 
+The Enquiry class records the communication initiated by a Property Seeker regarding a specific Listing, and holds attributes such as enquiry ID, a foreign key to the relevant Listing, a foreign key to the Property Seeker who initiated it, and the message or content of the enquiry.
+The relationships between these classes follow the relational database principles: a Property Owner may have many Listings, but each Listing belongs to exactly one Property Owner; similarly, a Listing may receive many enquirers, but each enquiry is linked to one Listing and one Property Seeker.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.5.3: Class Diagram of the Rental and Sales Management System
+
+3.6	Physical Design
+While the logical design explain what the system does and how its components relate to one another conceptually, the physical design focuses on how these elements are actually implemented, including the structure of the database, the design of the input and output interfaces, and the controls put in place to secure and validate the system. 
+In short, physical design means translating the logical design into a practical and working system.
+3.6.1  Database Design (ERD and Table Layout)
+The database for the Rental and Sales Management System was designed using the relational model, in line with the theoretical framework discussed in Chapter Two (Codd, 1970). The Entity Relationship Diagram (ERD) for the system identifies four principal entities, reflecting the classes discussed in section 3.5.3: Users (Property Owner, Property Seeker), Listings, enquiry, and where applicable, a separate table is created for Property Images to allow each listing to be associated with multiple photographs without violating normalization principles.
+The Users table stores attributes including a unique user ID (primary key), full name, email address, password (stored in hashed form), phone number, and a role field used to distinguish Property Owners from Property Seekers. The Listings table stores a unique listing ID (primary key), the property type, location, price, description, the date the listing was created, and a foreign key referencing the user ID of the Property Owner who created the listing. The Property Images table stores an image ID (primary key), the image file path, and a foreign key referencing the listing ID to which the image belongs. The Enquiry table stores an enquiry ID (primary key), the message content, the date the enquiry was made, and foreign keys referencing both the Listing in question and the Property Seeker who made the enquiry.
+This structure was normalized to the third normal form to remove redundant data and ensure that updates to any single piece of information, such as a change to a listing's price, do not require corresponding changes to be made in multiple places within the database.
+
+
+
+
+
+
+
+
+
+
+
+Figure 3.6: Entity Relationship Diagram of the Rental and Sales Management System]
+
+3.6.2	Input Design
+Input design refers to the manner in which data is collected from users and submitted to the system. The system's input design was guided by the usability requirement stated in section 3.4.2, with forms kept simple and fields clearly labeled to minimize the possibility of user error.
+The Registration form collects the user's full name, email address, phone number, password, and intended role (Property Owner or Property Seeker). The Login form collects the user's email address and password. The Property Listing form, accessible only to logged-in Property Owners, collects the property type, location, price, description, and one or more property images. The Search form, accessible to Property Seekers, collects the desired location and budget range, which are passed to the system as filter parameters. The enquiry form collects a short message from a Property Seeker, which is then linked to the relevant listing and to the appropriate Property Owner.
+In each case, basic input validation is applied at the point of entry; required fields, such as price and location on the listing form, cannot be left blank, and the email field across both registration and login forms is validated to ensure it follows a correct email format before being submitted to the database.
+3.6.3	Output Design
+Output design refers to how information is presented back to the user after processing. The system presents output through three principal interfaces. The Property Listings page displays search results in a list format, with each entry showing a thumbnail image, property type, location, price, and a short excerpt of the description, allowing a Property Seeker to compare multiple properties at a glance before selecting one to view in detail. The Property Detail page displays the complete information for a single listing, including all uploaded images, the full description, and an option to submit an inquiry. The Dashboard output, which differs depending on the role of the logged-in user, displays either the list of listings created by a Property Owner together with any inquiries received, or the list of properties a Property Seeker has previously viewed or inquired about.
+3.6.4	System Controls
+System control are an integral part of any software system, including web applications. They encompass various aspects that are crucial for the proper functioning and security of the system. These controls can be broadly categorized into security controls, input controls, and output controls, each serving a specific purpose in ensuring the system’s integrity, availability, and reliability.
+3.6.4.1  	Security Controls
+Access to the system is controlled through a secure authentication process, requiring a registered email address and a password before a user can log in. Passwords are not stored in plain text within the database but are hashed, in keeping with standard practice for protecting user credentials. The Role Based Access Control (RBAC) model is used to ensure that each users, whether a propertyowner or propertyseeker, is granted access only to the features and data relevant to their role. And also avoid a Property Owner from accessing or modifying another owner's listings.
+3.6.4.2	Input Controls
+Input controls are applied to prevent invalid or incomplete data from being accepted into the system. As discussed in section 3.6.2, mandatory fields cannot be submitted blank, and fields such as email addresses and prices are validated for correct format before being accepted. These controls reduce the likelihood of corrupted or unusable records entering the database and help maintain the overall data integrity of the system.
+3.6.4.3	Output Controls
+Output controls ensure that the information presented to users is accurate and properly restricted to what they are authorized to see. For instance, a Property Seeker viewing the platform is shown only listings that are currently marked as available, while a Property Owner viewing their dashboard is shown only the listings and enquirers linked to  their own account. This prevents the unintended exposure of information that is not relevant or appropriate to a given user's role.
+3.7. Summary
+This chapter has discussed the analysis and design of the proposed Rental and Sales Management System, covering the requirement gathering process, the use case diagram, the functional and non-functional requirements, the Agile design methodology used, and both the logical and physical design of the system. 
+

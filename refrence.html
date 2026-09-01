@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realestay — Modern Real Estate Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --brand-dark: #092c2e;
+            --brand-primary: #0f172a;
+            --brand-accent: #2563eb;
+            --bg-light: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --radius-md: 16px;
+            --radius-lg: 28px;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.03);
+            --shadow-md: 0 12px 24px -4px rgba(15, 23, 42, 0.08);
+            --shadow-lg: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero-wrapper {
+            padding: 12px;
+            background: #ffffff;
+        }
+
+        .hero-section {
+            background: radial-gradient(135% 100% at 50% 0%, #114145 0%, var(--brand-dark) 100%);
+            color: #ffffff;
+            border-radius: var(--radius-lg);
+            position: relative;
+            padding-bottom: 80px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 22px;
+            color: #ffffff;
+        }
+
+        .logo-icon {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-started {
+            background-color: #ffffff;
+            color: var(--brand-dark);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* Hero Content Grid with Foreground Image & Search Box */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 60px;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 54px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1.5px;
+        }
+
+        .hero-description {
+            color: #94a3b8;
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+
+        .hero-right-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+
+        .hero-image-card {
+            width: 100%;
+            height: 220px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-img-badge {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .search-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(16px);
+            color: var(--text-main);
+            padding: 28px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .search-card h3 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .form-input, .form-select {
+            width: 100%;
+            padding: 12px 16px 12px 40px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 14px;
+            outline: none;
+            background-color: #f8fafc;
+        }
+
+        .form-group i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            width: 16px;
+        }
+
+        .btn-search {
+            width: 100%;
+            background: var(--brand-primary);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* --- FEATURE CARDS (REPLACING TEXT BLOB) --- */
+        .features-section {
+            padding: 80px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon-wrapper {
+            width: 52px;
+            height: 52px;
+            background: #f0fdf4;
+            color: #16a34a;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* --- LISTINGS --- */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .category-filters {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            margin-bottom: 40px;
+        }
+
+        .filter-chip {
+            padding: 10px 22px;
+            border-radius: 30px;
+            border: 1px solid var(--border-color);
+            background: white;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .filter-chip.active {
+            background: var(--brand-primary);
+            color: white;
+            border-color: var(--brand-primary);
+        }
+
+        .listings-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 100px;
+        }
+
+        .property-card {
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .property-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .property-details {
+            padding: 24px;
+        }
+
+        .property-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .property-specs {
+            display: flex;
+            gap: 16px;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        .property-price {
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        /* --- STATS --- */
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 60px 0;
+            background: white;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            margin-bottom: 100px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 44px;
+            font-weight: 800;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* --- AUTO-SCROLLING TESTIMONIALS CAROUSEL --- */
+        .testimonial-section {
+            margin-bottom: 120px;
+            overflow: hidden;
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .marquee-track {
+            display: flex;
+            gap: 24px;
+            width: max-content;
+            animation: scroll 25s linear infinite;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .testimonial-card-small {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            width: 380px;
+            box-shadow: var(--shadow-sm);
+            flex-shrink: 0;
+        }
+
+        .testimonial-user {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .testimonial-user img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* --- FAQS --- */
+        .faq-section {
+            margin-bottom: 120px;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 60px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-item details summary {
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Wrapper -->
+    <div class="hero-wrapper">
+        <div class="hero-section">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <span class="logo-icon"><i data-lucide="home" style="width:20px;"></i></span>
+                        Realestay
+                    </div>
+                    <div class="nav-links">
+                        <a href="#">Rent</a>
+                        <a href="#">Buy</a>
+                        <a href="#">Sell</a>
+                        <a href="#">Manage Property</a>
+                    </div>
+                    <div class="nav-actions">
+                        <button class="icon-btn"><i data-lucide="search" style="width:18px;"></i></button>
+                        <button class="icon-btn"><i data-lucide="user" style="width:18px;"></i></button>
+                        <button class="btn-started">Get Started</button>
+                    </div>
+                </nav>
+
+                <div class="hero-grid">
+                    <div>
+                        <h1 class="hero-title">Buy, rent, or sell your property easily</h1>
+                        <p class="hero-description">A seamless platform engineered to connect buyers, sellers, and renters directly without commissions or hassle.</p>
+                        <a href="#" class="btn-started" style="text-decoration: none; display: inline-block;">Contact Us Now</a>
+                    </div>
+
+                    <!-- Right Side: Foreground Image Preview + Search Form -->
+                    <div class="hero-right-container">
+                        <div class="hero-image-card">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Featured Property">
+                            <div class="hero-img-badge">
+                                <i data-lucide="sparkles" style="width:14px; color:#f59e0b;"></i> Featured Listing
+                            </div>
+                        </div>
+
+                        <div class="search-card">
+                            <h3>Quick Find Your Property</h3>
+                            <form onsubmit="event.preventDefault();">
+                                <div class="form-group">
+                                    <i data-lucide="map-pin"></i>
+                                    <input type="text" class="form-input" placeholder="Location">
+                                </div>
+                                <div class="form-group">
+                                    <i data-lucide="home"></i>
+                                    <select class="form-select">
+                                        <option value="">House Type</option>
+                                        <option>Villa</option>
+                                        <option>Apartment</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-search">Search Property</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- CLEAN 3-COLUMN FEATURES (Replaces the text blob) -->
+        <section class="features-section">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="award" style="width:24px;"></i>
+                    </div>
+                    <h3>10 Years Experience</h3>
+                    <p>Decade of expertise serving clients across the United Kingdom with transparent, commission-free guidance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper" style="background:#eff6ff; color:#2563eb;">
+                        <i data-lucide="users" style="width:24px;"></i>
+                    </div>
+                    <h3>Personalized Support</h3>
+                    <p>Dedicated advisors tailoring every step from finding your dream home to valuation and final closing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper" style="background:#fef3c7; color:#d97706;">
+                        <i data-lucide="trending-up" style="width:24px;"></i>
+                    </div>
+                    <h3>Best Results</h3>
+                    <p>Optimized pricing strategies ensuring sellers get top value and buyers lock in fair, verified deals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LISTINGS SECTION -->
+        <section>
+            <div class="section-header">
+                <h2 class="section-title">Explore our latest property</h2>
+            </div>
+
+            <div class="category-filters">
+                <button class="filter-chip active">All Type</button>
+                <button class="filter-chip">Industrial House</button>
+                <button class="filter-chip">Apartment</button>
+                <button class="filter-chip">Villa</button>
+            </div>
+
+            <div class="listings-grid">
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" class="property-img" alt="House">
+                    <div class="property-details">
+                        <h4 class="property-name">The Grandview Residences</h4>
+                        <div class="property-specs">
+                            <span>2 Bed</span> &bull; <span>2 Bath</span> &bull; <span>130 m²</span>
+                        </div>
+                        <div class="property-price">$450,000</div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" class="property-img" alt="House">
+                    <div class="property-details">
+                        <h4 class="property-name">Royal Crest Manor</h4>
+                        <div class="property-specs">
+                            <span>2 Bed</span> &bull; <span>2 Bath</span> &bull; <span>130 m²</span>
+                        </div>
+                        <div class="property-price">$750,000</div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" class="property-img" alt="House">
+                    <div class="property-details">
+                        <h4 class="property-name">Opulence Gardens</h4>
+                        <div class="property-specs">
+                            <span>2 Bed</span> &bull; <span>2 Bath</span> &bull; <span>130 m²</span>
+                        </div>
+                        <div class="property-price">$350,000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="stats-section">
+            <div>
+                <div class="stat-number">9K+</div>
+                <div class="stat-label">Listed Properties</div>
+            </div>
+            <div>
+                <div class="stat-number">23M+</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div>
+                <div class="stat-number">70+</div>
+                <div class="stat-label">Awards</div>
+            </div>
+            <div>
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Customer Retention</div>
+            </div>
+        </section>
+
+        <!-- AUTO-SCROLLING TESTIMONIALS -->
+        <section class="testimonial-section">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 32px;">What our clients say</h2>
+            
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Duplicate cards sequence for seamless continuous loop -->
+                    <div class="testimonial-card-small">
+                        <p style="color:#334155; font-size:14px;">"I was blown away by the level of service. They listened to my needs and provided expert advice throughout."</p>
+                        <div class="testimonial-user">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="User">
+                            <div>
+                                <h5 style="font-weight:700;">Mohammed Madhu</h5>
+                                <span style="font-size:12px; color:#64748b;">CEO of XYZ Company</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card-small">
+                        <p style="color:#334155; font-size:14px;">"Found our dream home in less than two weeks without paying high commission fees. Highly recommended!"</p>
+                        <div class="testimonial-user">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="User">
+                            <div>
+                                <h5 style="font-weight:700;">Sarah Jenkins</h5>
+                                <span style="font-size:12px; color:#64748b;">Homeowner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card-small">
+                        <p style="color:#334155; font-size:14px;">"Smooth process from valuation to final closing. Their verified listing process gave us total peace of mind."</p>
+                        <div class="testimonial-user">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="User">
+                            <div>
+                                <h5 style="font-weight:700;">David Chen</h5>
+                                <span style="font-size:12px; color:#64748b;">Property Investor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeated Set for Loop -->
+                    <div class="testimonial-card-small">
+                        <p style="color:#334155; font-size:14px;">"I was blown away by the level of service. They listened to my needs and provided expert advice throughout."</p>
+                        <div class="testimonial-user">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="User">
+                            <div>
+                                <h5 style="font-weight:700;">Mohammed Madhu</h5>
+                                <span style="font-size:12px; color:#64748b;">CEO of XYZ Company</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card-small">
+                        <p style="color:#334155; font-size:14px;">"Found our dream home in less than two weeks without paying high commission fees. Highly recommended!"</p>
+                        <div class="testimonial-user">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="User">
+                            <div>
+                                <h5 style="font-weight:700;">Sarah Jenkins</h5>
+                                <span style="font-size:12px; color:#64748b;">Homeowner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQS SECTION -->
+        <section class="faq-section">
+            <div class="faq-grid">
+                <div>
+                    <h2 class="section-title">General FAQs</h2>
+                    <p style="color:var(--text-muted); font-size:14px; margin-top:12px;">Everything you need to know about our listing platform.</p>
+                </div>
+
+                <div>
+                    <div class="faq-item">
+                        <details open>
+                            <summary>
+                                1. How do I get started with buying a property?
+                                <i data-lucide="chevron-down" style="width:18px;"></i>
+                            </summary>
+                            <div class="faq-answer">
+                                Simply search our properties or request a consultation. We will assign a dedicated advisor to assist with tour bookings and negotiation.
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="faq-item">
+                        <details>
+                            <summary>
+                                2. How long does it take to sell a property?
+                                <i data-lucide="chevron-down" style="width:18px;"></i>
+                            </summary>
+                            <div class="faq-answer">
+                                Properties listed on our platform average 14–21 days to closing depending on local market demand.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
