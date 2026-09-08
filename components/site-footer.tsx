@@ -56,7 +56,7 @@ export function SiteFooter() {
             <ul className="space-y-2.5 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <MapPin className="size-4 shrink-0" />
-                Lagos, Nigeria
+                Calabar, Cross River, Nigeria
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="size-4 shrink-0" />

@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
@@ -67,15 +68,17 @@ export function SiteHeader() {
         }
       />
       <DropdownMenuContent align="end" className="w-60">
-        <DropdownMenuLabel>
-          <div className="flex flex-col gap-1">
-            <span>{session.fullName}</span>
-            <span className="text-muted-foreground text-xs">{session.email}</span>
-            <Badge variant="secondary" className="mt-1 w-fit capitalize">
-              {session.role}
-            </Badge>
-          </div>
-        </DropdownMenuLabel>
+        <DropdownMenuGroup>
+          <DropdownMenuLabel>
+            <div className="flex flex-col gap-1">
+              <span>{session.fullName}</span>
+              <span className="text-muted-foreground text-xs">{session.email}</span>
+              <Badge variant="secondary" className="mt-1 w-fit capitalize">
+                {session.role}
+              </Badge>
+            </div>
+          </DropdownMenuLabel>
+        </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem render={<Link href={getDashboardPath(session.role)} />}>
           <LayoutDashboard />

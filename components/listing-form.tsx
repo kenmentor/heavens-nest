@@ -30,6 +30,11 @@ const locations = [
   "Wuse 2, Abuja",
   "Bodija, Ibadan",
   "D-Line, Port Harcourt",
+  "Calabar Municipality",
+  "Calabar South",
+  "State Housing, Calabar",
+  "Ekot, Calabar",
+  "Mary Slessor Avenue, Calabar",
 ];
 
 const conditions = ["furnished", "unfurnished", "partly-furnished"] as const;

@@ -35,8 +35,8 @@ import { getListingById, getListings, getUsers } from "@/lib/server/dal";
 import { formatNaira } from "@/lib/navigation";
 import {
   listingReference,
-  osmEmbedUrl,
-  osmExternalUrl,
+  mapEmbedUrl,
+  mapExternalUrl,
 } from "@/lib/listing";
 
 type PageProps = {
@@ -247,9 +247,10 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                   {listing.coordinates ? (
                     <iframe
                       title={`Map showing ${listing.location}`}
-                      src={osmEmbedUrl(listing.coordinates)}
+                      src={mapEmbedUrl(listing.coordinates)}
                       className="size-full border-0"
                       loading="lazy"
+                      allowFullScreen
                       referrerPolicy="no-referrer-when-downgrade"
                     />
                   ) : (
@@ -265,13 +266,13 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                   </p>
                   {listing.coordinates && (
                     <a
-                      href={osmExternalUrl(listing.coordinates)}
+                      href={mapExternalUrl(listing.coordinates)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
                     >
                       <ExternalLink className="size-3.5" />
-                      Open in OpenStreetMap
+                      Open in Google Maps
                     </a>
                   )}
                 </div>
